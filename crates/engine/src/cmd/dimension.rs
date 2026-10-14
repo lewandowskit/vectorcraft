@@ -14,7 +14,7 @@ pub fn specs() -> Vec<CommandSpec> {
             "Create Dimension",
             [],
             None,
-            "{mode?: linear|angular|radius|diameter, a?: [x,y], b?: [x,y], vertex?: [x,y], source?: {kind: segment, edge: {node,subpath,segment}}|{kind: angle,first: edge,second: edge}|{kind: circle,node}, offset?: pt, options?: {units,precision,scale,hideUnits,lineWeight,lineType,lineColor,arrowStyle,arrowScale,extensionWeight,extensionType,extensionColor,extensionOffset,extensionLength,hideExtensions,fontFamily,fontStyle,fontSize,textColor,textPosition,textAlignment,textOffset}} → {id,label}; scale is drawing:real; linked measurements follow source edits",
+            "{mode?: linear|angular|radius|diameter, a?: [x,y], b?: [x,y], vertex?: [x,y], source?: {kind: segment, edge: {node,subpath,segment}}|{kind: angle,first: edge,second: edge}|{kind: circle,node}, offset?: pt, text?: string (shown instead of the measurement; `<>` stands for it), options?: {units,precision,scale,hideUnits,lineWeight,lineType,lineColor,arrowStyle,arrowScale,extensionWeight,extensionType,extensionColor,extensionOffset,extensionLength,hideExtensions,fontFamily,fontStyle,fontSize,textColor,textPosition,textAlignment,textOffset}} → {id,label}; scale is drawing:real; linked measurements follow source edits",
             has_doc,
             create
         ),
@@ -32,7 +32,7 @@ pub fn specs() -> Vec<CommandSpec> {
             "Update Dimensions",
             [],
             None,
-            "{ids?: [dimension ids] (default selection), options?: dimension options, offset?: pt} edit existing dimensions → {ids}",
+            "{ids?: [dimension ids] (default selection), options?: dimension options, offset?: pt, text?: string|null (shown instead of the measurement, `<>` stands for it; \"\" or null: the measurement again)} edit existing dimensions → {ids}",
             has_doc,
             update
         ),
@@ -56,6 +56,16 @@ fn point(p: &Value, key: &str) -> Result<Point> {
     let x = a.first().and_then(Value::as_f64).ok_or_else(|| error("Invalid point"))?;
     let y = a.get(1).and_then(Value::as_f64).ok_or_else(|| error("Invalid point"))?;
     Ok(Point::new(x, y))
+}
+
+/// `text`: the text typed over the measurement; a string (`""`: the measurement again) or null.
+fn text(p: &Value) -> Result<Option<String>> {
+    match p.get("text") {
+        None | Some(Value::Null) => Ok(None),
+        Some(Value::String(s)) if s.trim().is_empty() => Ok(None),
+        Some(Value::String(s)) => Ok(Some(s.clone())),
+        Some(_) => Err(error("Dimension text must be one line of at most 256 characters")),
+    }
 }
 
 fn distance(p: &Value, fallback: f64) -> Result<f64> {
@@ -116,7 +126,17 @@ fn recipe(s: &Session, p: &Value) -> Result<Dimension> {
     } else {
         Point::ZERO
     };
-    let mut d = Dimension { mode: mode.into(), a, b, vertex, offset: distance(p, 30.0)?, length: a.distance(b), options: options(s, p)?, source };
+    let mut d = Dimension {
+        mode: mode.into(),
+        a,
+        b,
+        vertex,
+        offset: distance(p, 30.0)?,
+        length: a.distance(b),
+        options: options(s, p)?,
+        source,
+        text: text(p)?,
+    };
     d.resolve(&s.doc()?.doc).map_err(error)?;
     Ok(d)
 }
@@ -209,6 +229,7 @@ fn selection(s: &mut Session, p: &Value) -> Result<Value> {
                 length: 0.0,
                 options: o.clone(),
                 source: Some(DimensionSource::Segment { edge }),
+                text: None,
             };
             dim.resolve(doc).map_err(error)?;
             ids.push(insert(doc, parent, dim)?);
@@ -239,6 +260,9 @@ fn update(s: &mut Session, p: &Value) -> Result<Value> {
                 dim.options = o.clone();
             }
             dim.offset = distance(p, dim.offset)?;
+            if p.get("text").is_some() {
+                dim.text = text(p)?;
+            }
             dim.resolve(doc).map_err(error)?;
             replace(doc, *id, dim)?;
         }

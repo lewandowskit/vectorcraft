@@ -4363,3 +4363,13 @@ theme	Appearance	Giao diện
 	Shape area: {area}	Diện tích hình: {area}
 	Width × height of the selection: the sheet it needs	Rộng × cao của vùng chọn: tờ cần dùng
 	Area the closed shapes enclose: holes left out, overlaps counted once	Diện tích các hình khép kín bao quanh: bỏ lỗ thủng, phần chồng chỉ tính một lần
+# Edit Dimension Text (double-click a dimension).
+	Edit Dimension Text	Sửa chữ kích thước
+	Edit Dimension Text…	Sửa chữ kích thước…
+	Select a dimension	Hãy chọn một kích thước
+	Measured:	Đo được:
+	Text:	Chữ:
+	Shows:	Hiển thị:
+	<> stands for the measured value. Leave empty to show the measurement.	<> là giá trị đo được. Để trống để hiển thị số đo.
+	Use Measured Value	Dùng giá trị đo
+@msg	Dimension text must be one line of at most 256 characters	Chữ kích thước phải là một dòng tối đa 256 ký tự

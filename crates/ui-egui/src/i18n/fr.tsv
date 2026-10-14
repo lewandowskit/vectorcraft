@@ -4812,3 +4812,13 @@ theme	Appearance	Apparence
 	Shape area: {area}	Surface de la forme : {area}
 	Width × height of the selection: the sheet it needs	Largeur × hauteur de la sélection : la feuille nécessaire
 	Area the closed shapes enclose: holes left out, overlaps counted once	Surface délimitée par les formes fermées : trous exclus, chevauchements comptés une fois
+# Edit Dimension Text (double-click a dimension).
+	Edit Dimension Text	Modifier le texte de cote
+	Edit Dimension Text…	Modifier le texte de cote…
+	Select a dimension	Sélectionnez une cote
+	Measured:	Mesuré :
+	Text:	Texte :
+	Shows:	Affiche :
+	<> stands for the measured value. Leave empty to show the measurement.	<> représente la valeur mesurée. Laissez vide pour afficher la mesure.
+	Use Measured Value	Utiliser la valeur mesurée
+@msg	Dimension text must be one line of at most 256 characters	Le texte de cote doit tenir sur une ligne de 256 caractères au plus

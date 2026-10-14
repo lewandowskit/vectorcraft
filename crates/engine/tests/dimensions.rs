@@ -243,3 +243,47 @@ fn dimension_cannot_measure_its_own_generated_art() {
     let child = s.doc().unwrap().doc.node(NodeId(id)).unwrap().children().unwrap()[0].id;
     assert!(s.execute("dimension.create", &json!({"source":{"kind":"segment","edge":{"node":child,"subpath":0,"segment":0}}})).is_err());
 }
+#[test]
+fn typed_text_replaces_the_label_keeps_following_the_source_and_resets() {
+    let mut s = session();
+    let line = edge(&mut s);
+    let id = dim(&mut s, line);
+    assert_eq!(text(&s, id), "10.00 in");
+    // `<>` stands for the measurement, which still follows the measured line.
+    run(&mut s, "dimension.update", json!({"ids":[id],"text":"<> ±0.5"}));
+    assert_eq!(text(&s, id), "10.00 in ±0.5");
+    run(&mut s, "select.set", json!({"ids":[line]}));
+    run(&mut s, "object.scale", json!({"sx":200,"sy":100}));
+    assert_eq!(text(&s, id), "20.00 in ±0.5");
+    // Plain text replaces it; undo brings the previous text back.
+    run(&mut s, "dimension.update", json!({"ids":[id],"text":"1200 mm"}));
+    assert_eq!(text(&s, id), "1200 mm");
+    run(&mut s, "edit.undo", json!({}));
+    assert_eq!(text(&s, id), "20.00 in ±0.5");
+    // The text survives a save and open.
+    let json = serde_json::to_string(&*s.doc().unwrap().doc).unwrap();
+    let doc: Document = serde_json::from_str(&json).unwrap();
+    let mut reopened = Session::new();
+    reopened.add_document(doc, None);
+    assert_eq!(text(&reopened, id), "20.00 in ±0.5");
+    // Empty text and null show the measurement again; other options keep the text.
+    run(&mut s, "dimension.update", json!({"ids":[id],"text":""}));
+    assert_eq!(text(&s, id), "20.00 in");
+    run(&mut s, "dimension.update", json!({"ids":[id],"text":"A"}));
+    run(&mut s, "dimension.update", json!({"ids":[id],"offset":40}));
+    assert_eq!(text(&s, id), "A");
+    run(&mut s, "dimension.update", json!({"ids":[id],"text":null}));
+    assert_eq!(text(&s, id), "20.00 in");
+}
+#[test]
+fn typed_text_is_one_short_line() {
+    let mut s = session();
+    let line = edge(&mut s);
+    let id = dim(&mut s, line);
+    for bad in [json!("a\nb"), json!("x".repeat(257)), json!(5)] {
+        assert!(s.execute("dimension.update", &json!({"ids":[id],"text":bad})).is_err(), "{bad}");
+    }
+    assert_eq!(text(&s, id), "10.00 in");
+    let created = run(&mut s, "dimension.create", json!({"a":[0,300],"b":[72,300],"text":"Ø <>","options":{"units":"in","precision":0}}));
+    assert_eq!(created["label"], "Ø 1 in");
+}

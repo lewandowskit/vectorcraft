@@ -4380,3 +4380,13 @@ lighting	Light	Свет
 	Shape area: {area}	Площадь фигуры: {area}
 	Width × height of the selection: the sheet it needs	Ширина × высота выделения: нужный лист
 	Area the closed shapes enclose: holes left out, overlaps counted once	Площадь внутри замкнутых фигур: без отверстий, перекрытия считаются один раз
+# Edit Dimension Text (double-click a dimension).
+	Edit Dimension Text	Изменить текст размера
+	Edit Dimension Text…	Изменить текст размера…
+	Select a dimension	Выберите размер
+	Measured:	Измерено:
+	Text:	Текст:
+	Shows:	Показывает:
+	<> stands for the measured value. Leave empty to show the measurement.	<> обозначает измеренное значение. Оставьте пустым, чтобы показать измерение.
+	Use Measured Value	Использовать измеренное значение
+@msg	Dimension text must be one line of at most 256 characters	Текст размера должен быть одной строкой не длиннее 256 символов

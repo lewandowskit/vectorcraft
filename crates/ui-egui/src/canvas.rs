@@ -728,7 +728,20 @@ fn handle_input(app: &mut VectorcraftApp, ui: &Ui, resp: &egui::Response, rect: 
         let ev = PointerEvent { kind: PointerKind::Move, pos: xf.to_doc(p), mods: mods(m, space), pressure: 1.0 };
         dispatch(app, &ev, view);
     }
-    if resp.double_clicked()
+    // Double-clicking a dimension with a selection tool or the Dimension tool edits its text
+    // instead of isolating its group.
+    let dimension = resp
+        .double_clicked()
+        .then_some(at)
+        .flatten()
+        .filter(|_| matches!(app.session.tool_id(), "selection" | "directSelection" | "groupSelection" | "dimension"))
+        .and_then(|p| hit_at(app, xf.to_doc(p), xf.zoom))
+        .and_then(|h| crate::dialogs::dimension_text::dimension_of(app, h.leaf));
+    if let Some(id) = dimension {
+        if let Err(e) = crate::dialogs::dimension_text::open(app, Some(id)) {
+            app.ui.status = e;
+        }
+    } else if resp.double_clicked()
         && let Some(p) = at
     {
         let ev = PointerEvent { kind: PointerKind::DoubleClick, pos: xf.to_doc(p), mods: mods(m, space), pressure: 1.0 };

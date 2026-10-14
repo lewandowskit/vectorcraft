@@ -3762,3 +3762,12 @@ axis	Both	Ambos
 	Shape area: {area}	Área da forma: {area}
 	Width × height of the selection: the sheet it needs	Largura × altura da seleção: a folha necessária
 	Area the closed shapes enclose: holes left out, overlaps counted once	Área delimitada pelas formas fechadas: sem furos, sobreposições contadas uma vez
+# Edit Dimension Text (double-click a dimension).
+	Edit Dimension Text	Editar texto da cota
+	Edit Dimension Text…	Editar texto da cota…
+	Select a dimension	Selecione uma cota
+	Measured:	Medido:
+	Text:	Texto:
+	Shows:	Mostra:
+	<> stands for the measured value. Leave empty to show the measurement.	<> representa o valor medido. Deixe vazio para mostrar a medida.
+	Use Measured Value	Usar valor medido

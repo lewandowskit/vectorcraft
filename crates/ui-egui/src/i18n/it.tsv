@@ -4384,3 +4384,13 @@ lighting	Light	Luce
 	Shape area: {area}	Area della forma: {area}
 	Width × height of the selection: the sheet it needs	Larghezza × altezza della selezione: il foglio necessario
 	Area the closed shapes enclose: holes left out, overlaps counted once	Area racchiusa dalle forme chiuse: fori esclusi, sovrapposizioni contate una volta
+# Edit Dimension Text (double-click a dimension).
+	Edit Dimension Text	Modifica testo quota
+	Edit Dimension Text…	Modifica testo quota…
+	Select a dimension	Seleziona una quota
+	Measured:	Misurato:
+	Text:	Testo:
+	Shows:	Mostra:
+	<> stands for the measured value. Leave empty to show the measurement.	<> indica il valore misurato. Lascia vuoto per mostrare la misura.
+	Use Measured Value	Usa valore misurato
+@msg	Dimension text must be one line of at most 256 characters	Il testo della quota deve essere una riga di al massimo 256 caratteri

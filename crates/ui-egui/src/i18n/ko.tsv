@@ -4348,3 +4348,13 @@ lighting	Light	광원
 	Shape area: {area}	도형 면적: {area}
 	Width × height of the selection: the sheet it needs	선택 영역의 폭 × 높이: 필요한 용지
 	Area the closed shapes enclose: holes left out, overlaps counted once	닫힌 도형이 둘러싼 면적: 구멍 제외, 겹친 부분은 한 번만 계산
+# Edit Dimension Text (double-click a dimension).
+	Edit Dimension Text	치수 텍스트 편집
+	Edit Dimension Text…	치수 텍스트 편집…
+	Select a dimension	치수를 선택하세요
+	Measured:	측정값:
+	Text:	텍스트:
+	Shows:	표시:
+	<> stands for the measured value. Leave empty to show the measurement.	<>는 측정값을 나타냅니다. 비워 두면 측정값이 표시됩니다.
+	Use Measured Value	측정값 사용
+@msg	Dimension text must be one line of at most 256 characters	치수 텍스트는 256자 이하의 한 줄이어야 합니다

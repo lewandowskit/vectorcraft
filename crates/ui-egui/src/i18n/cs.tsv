@@ -4813,3 +4813,13 @@ mark-style	Japanese	Japonské
 	Shape area: {area}	Plocha tvaru: {area}
 	Width × height of the selection: the sheet it needs	Šířka × výška výběru: arch, který potřebuje
 	Area the closed shapes enclose: holes left out, overlaps counted once	Plocha uzavřená tvary: bez otvorů, překryvy počítány jednou
+# Edit Dimension Text (double-click a dimension).
+	Edit Dimension Text	Upravit text kóty
+	Edit Dimension Text…	Upravit text kóty…
+	Select a dimension	Vyberte kótu
+	Measured:	Naměřeno:
+	Text:	Text:
+	Shows:	Zobrazí:
+	<> stands for the measured value. Leave empty to show the measurement.	<> zastupuje naměřenou hodnotu. Ponechte prázdné pro zobrazení měření.
+	Use Measured Value	Použít naměřenou hodnotu
+@msg	Dimension text must be one line of at most 256 characters	Text kóty musí být jeden řádek s nejvýše 256 znaky

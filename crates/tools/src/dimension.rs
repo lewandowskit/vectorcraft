@@ -73,7 +73,7 @@ impl DimensionTool {
         if self.mode.is_empty() { "linear" } else { &self.mode }
     }
     fn recipe(&self, a: Point, b: Point, vertex: Point, source: Option<DimensionSource>) -> Dimension {
-        Dimension { mode: self.mode().into(), a, b, vertex, offset: 30.0, length: a.distance(b), options: self.style.clone(), source }
+        Dimension { mode: self.mode().into(), a, b, vertex, offset: 30.0, length: a.distance(b), options: self.style.clone(), source, text: None }
     }
     fn params(d: &Dimension) -> Value {
         let mut p = json!({"mode":d.mode,"a":[d.a.x,d.a.y],"b":[d.b.x,d.b.y],"vertex":[d.vertex.x,d.vertex.y],"offset":d.offset,"options":d.options});

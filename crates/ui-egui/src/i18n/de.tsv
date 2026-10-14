@@ -4339,3 +4339,13 @@ theme	Appearance	Erscheinungsbild
 	Shape area: {area}	Formfläche: {area}
 	Width × height of the selection: the sheet it needs	Breite × Höhe der Auswahl: der benötigte Bogen
 	Area the closed shapes enclose: holes left out, overlaps counted once	Von den geschlossenen Formen umschlossene Fläche: ohne Löcher, Überlappungen einmal gezählt
+# Edit Dimension Text (double-click a dimension).
+	Edit Dimension Text	Bemaßungstext bearbeiten
+	Edit Dimension Text…	Bemaßungstext bearbeiten…
+	Select a dimension	Wählen Sie eine Bemaßung aus
+	Measured:	Gemessen:
+	Text:	Text:
+	Shows:	Anzeige:
+	<> stands for the measured value. Leave empty to show the measurement.	<> steht für den gemessenen Wert. Leer lassen, um die Messung anzuzeigen.
+	Use Measured Value	Gemessenen Wert verwenden
+@msg	Dimension text must be one line of at most 256 characters	Der Bemaßungstext muss eine Zeile mit höchstens 256 Zeichen sein

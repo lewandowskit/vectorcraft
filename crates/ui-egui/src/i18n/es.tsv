@@ -4754,3 +4754,13 @@ mark-style	Japanese	Japonesas
 	Shape area: {area}	Área de la forma: {area}
 	Width × height of the selection: the sheet it needs	Ancho × alto de la selección: la hoja que necesita
 	Area the closed shapes enclose: holes left out, overlaps counted once	Área que encierran las formas cerradas: sin agujeros, las superposiciones cuentan una vez
+# Edit Dimension Text (double-click a dimension).
+	Edit Dimension Text	Editar texto de cota
+	Edit Dimension Text…	Editar texto de cota…
+	Select a dimension	Seleccione una cota
+	Measured:	Medido:
+	Text:	Texto:
+	Shows:	Muestra:
+	<> stands for the measured value. Leave empty to show the measurement.	<> representa el valor medido. Déjelo vacío para mostrar la medida.
+	Use Measured Value	Usar valor medido
+@msg	Dimension text must be one line of at most 256 characters	El texto de la cota debe ser una línea de 256 caracteres como máximo

@@ -53,6 +53,12 @@ use Item::Sep;
 /// UI-level commands: (id, label, shortcut, params doc).
 pub const UI_COMMANDS: &[(&str, &str, &str, &str)] = &[
     (
+        "dimension.editText",
+        "Edit Dimension Text…",
+        "",
+        "{id?} open Edit Dimension Text for dimension group `id` (default: the selected dimension): text shown instead of the measurement, `<>` standing for it (also a double-click on a dimension)",
+    ),
+    (
         "app.language",
         "Interface Language",
         "",
@@ -950,6 +956,10 @@ pub fn run_ui_command(app: &mut VectorcraftApp, id: &str, p: &Value) -> Option<R
         Ok(json!(*b))
     };
     let r = match id {
+        "dimension.editText" => {
+            let target = p.get("id").and_then(Value::as_u64).map(vectorcraft_doc::NodeId);
+            crate::dialogs::dimension_text::open(app, target)
+        }
         "file.newDialog" => {
             crate::dialogs::open_new_document(app);
             Ok(Value::Null)
@@ -2370,7 +2380,7 @@ pub fn menu_tree_named(english_names: bool) -> Vec<(&'static str, Vec<Item>)> {
                         c("Fit to Selected Art", "artboard.fitToSelection"),
                     ],
                 ),
-                sub("Dimensions", vec![c("Dimension Selected Paths", "dimension.selection")]),
+                sub("Dimensions", vec![c("Dimension Selected Paths", "dimension.selection"), c("Edit Dimension Text…", "dimension.editText")]),
                 sub(
                     "Graph",
                     vec![

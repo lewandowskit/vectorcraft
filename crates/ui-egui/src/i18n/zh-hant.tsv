@@ -3727,3 +3727,12 @@ lighting	Light	光源
 	Shape area: {area}	形狀面積：{area}
 	Width × height of the selection: the sheet it needs	所選物件的寬 × 高：所需的紙張
 	Area the closed shapes enclose: holes left out, overlaps counted once	封閉形狀圍成的面積：不含孔洞，重疊部分只計一次
+# Edit Dimension Text (double-click a dimension).
+	Edit Dimension Text	編輯尺寸文字
+	Edit Dimension Text…	編輯尺寸文字…
+	Select a dimension	請選擇一個尺寸標註
+	Measured:	測量值：
+	Text:	文字：
+	Shows:	顯示：
+	<> stands for the measured value. Leave empty to show the measurement.	<> 代表測量值。留空則顯示測量值。
+	Use Measured Value	使用測量值

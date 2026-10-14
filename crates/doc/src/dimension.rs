@@ -215,7 +215,15 @@ pub struct Dimension {
     pub length: f64,
     pub options: DimensionOptions,
     pub source: Option<DimensionSource>,
+    /// Text typed over the measurement (Edit Dimension Text): shown instead of the measured
+    /// label, with `<>` standing for the measured value (`<> ±0.5`, `ok. <>`). `None` or empty:
+    /// the measured label. The measurement itself keeps following the source.
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub text: Option<String>,
 }
+
+/// The longest text a dimension takes in place of its measurement.
+pub const MAX_DIMENSION_TEXT: usize = 256;
 
 impl Dimension {
     pub fn transform(&mut self, xf: Affine) {
@@ -295,6 +303,11 @@ impl Dimension {
         if self.a.distance(self.b) < 1e-6 {
             return Err("Choose two different points".into());
         }
+        if let Some(text) = &self.text
+            && (text.chars().count() > MAX_DIMENSION_TEXT || text.chars().any(char::is_control))
+        {
+            return Err("Dimension text must be one line of at most 256 characters".into());
+        }
         if self.mode == "angular" && (self.a.distance(self.vertex) < 1e-6 || self.b.distance(self.vertex) < 1e-6) {
             return Err("Choose two nonzero angle arms".into());
         }
@@ -305,7 +318,17 @@ impl Dimension {
         let v = self.b - self.vertex;
         u.cross(v).atan2(u.dot(v))
     }
+    /// The text drawn on the dimension: the typed text ([`Dimension::text`], `<>` replaced by the
+    /// measurement) or the measurement.
     pub fn label(&self) -> Result<String, String> {
+        let measured = self.measured_label()?;
+        Ok(match self.text.as_deref().map(str::trim) {
+            Some(text) if !text.is_empty() => text.replace("<>", &measured),
+            _ => measured,
+        })
+    }
+    /// The measurement as text (`12.5 cm`, `R 3 cm`, `90°`), whatever text was typed over it.
+    pub fn measured_label(&self) -> Result<String, String> {
         let (value, prefix) = match self.mode.as_str() {
             "angular" => (self.angle().abs().to_degrees(), ""),
             "radius" => (self.a.distance(self.b), "R "),

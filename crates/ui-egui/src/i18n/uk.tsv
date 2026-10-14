@@ -4364,3 +4364,13 @@ lighting	Light	Світло
 	Shape area: {area}	Площа фігури: {area}
 	Width × height of the selection: the sheet it needs	Ширина × висота виділення: потрібний аркуш
 	Area the closed shapes enclose: holes left out, overlaps counted once	Площа всередині замкнених фігур: без отворів, перекриття враховано один раз
+# Edit Dimension Text (double-click a dimension).
+	Edit Dimension Text	Змінити текст розміру
+	Edit Dimension Text…	Змінити текст розміру…
+	Select a dimension	Виберіть розмір
+	Measured:	Виміряно:
+	Text:	Текст:
+	Shows:	Показує:
+	<> stands for the measured value. Leave empty to show the measurement.	<> означає виміряне значення. Залиште порожнім, щоб показати вимірювання.
+	Use Measured Value	Використати виміряне значення
+@msg	Dimension text must be one line of at most 256 characters	Текст розміру має бути одним рядком не довшим за 256 символів

@@ -3943,3 +3943,12 @@ lighting	Light	光源
 	Shape area: {area}	形状面积：{area}
 	Width × height of the selection: the sheet it needs	所选对象的宽 × 高：所需的纸张
 	Area the closed shapes enclose: holes left out, overlaps counted once	闭合形状围成的面积：不含孔洞，重叠部分只计一次
+# Edit Dimension Text (double-click a dimension).
+	Edit Dimension Text	编辑尺寸文本
+	Edit Dimension Text…	编辑尺寸文本…
+	Select a dimension	请选择一个尺寸标注
+	Measured:	测量值：
+	Text:	文本：
+	Shows:	显示：
+	<> stands for the measured value. Leave empty to show the measurement.	<> 代表测量值。留空则显示测量值。
+	Use Measured Value	使用测量值
