@@ -4626,3 +4626,39 @@ mark-style	Japanese	Japońskie
 @msg	Unknown dimension mode	Nieznany tryb wymiaru
 @msg	Unknown dimension style	Nieznany styl wymiaru
 @msg	Unknown unit	Nieznana jednostka
+	Above	Nad linią
+	Along dimension	Wzdłuż wymiaru
+	Apply to selected dimensions	Zastosuj do zaznaczonych wymiarów
+	Arrow Scale:	Skala strzałek:
+	Arrow Style:	Styl strzałek:
+	Below	Pod linią
+	Centered	Wyśrodkowany
+	Click a circle, then click to choose the label direction.	Kliknij okrąg, a potem kliknij, aby wybrać kierunek etykiety.
+	Click an edge, then place the dimension. Alt-click picks individual anchors.	Kliknij krawędź, a potem umieść wymiar. Alt-klik wybiera pojedyncze punkty kontrolne.
+	Click two straight edges, then place the angle.	Kliknij dwie proste krawędzie, a potem umieść kąt.
+	Diameter	Średnica
+	Dimension Lines	Linie wymiarowe
+	Dimension Text	Tekst wymiaru
+	Dotted	Kropkowany
+	Extension Lines	Linie pomocnicze
+	Extension:	Przedłużenie:
+	Filled	Wypełniona
+	Font Size:	Rozmiar czcionki:
+	Hide Extension Lines	Ukryj linie pomocnicze
+	Hide Units	Ukryj jednostki
+	Length	Długość
+	Line Type:	Typ linii:
+	Line Weight:	Grubość linii:
+	Position:	Położenie:
+	Tick	Kreska
+	Units & Scale	Jednostki i skala
+@msg	Choose original artwork, not a dimension's generated paths	Wybierz oryginalną grafikę, a nie ścieżki wygenerowane przez wymiar
+@msg	Dimension is locked or hidden	Wymiar jest zablokowany lub ukryty
+@msg	Dimension mode does not match its source	Tryb wymiaru nie pasuje do jego źródła
+@msg	Invalid dimension mode	Nieprawidłowy tryb wymiaru
+@msg	Invalid dimension offset	Nieprawidłowe odsunięcie wymiaru
+@msg	Invalid point	Nieprawidłowy punkt
+@msg	Select at most 1000 segments at a time	Zaznacz najwyżej 1000 odcinków naraz
+@msg	Select dimensions to update (at most 1000)	Zaznacz wymiary do aktualizacji (najwyżej 1000)
+@msg	Select one or more paths first	Najpierw zaznacz co najmniej jedną ścieżkę
+@msg	Select only dimension groups	Zaznacz tylko grupy wymiarów
