@@ -4311,3 +4311,31 @@ theme	Appearance	Erscheinungsbild
 @msg	Unknown dimension mode	Unbekannter Bemaßungsmodus
 @msg	Unknown dimension style	Unbekannter Bemaßungsstil
 @msg	Unknown unit	Unbekannte Einheit
+	Basic	Basis
+	Fill and Stroke Controls	Steuerelemente für Fläche und Kontur
+	Coloring Controls	Steuerelemente für Farbe
+	Draw Mode Controls	Steuerelemente für Zeichenmodus
+	Screen Mode Controls	Steuerelemente für Bildschirmmodus
+	Drawer menu	Menü der Werkzeugschublade
+	Toolbar: Show Controls	Werkzeugleiste: Steuerelemente einblenden
+@msg	control must be fillStroke, coloring, drawMode or screenMode	control muss fillStroke, coloring, drawMode oder screenMode sein
+@msg	unknown control `{name}`: fillStroke, coloring, drawMode or screenMode	unbekanntes Steuerelement `{name}`: fillStroke, coloring, drawMode oder screenMode
+@msg	give a fraction `t` from 0 to 1	geben Sie einen Wert `t` von 0 bis 1 an
+@msg	give the path `id`	geben Sie die `id` des Pfads an
+@msg	invalid stroke widths	ungültige Konturbreiten
+@msg	object has no weighted stroke	das Objekt hat keine Kontur mit einer gültigen positiven Stärke
+# Corner Radius: a field per corner of a live rectangle.
+	Single Corner Radius	Einheitlicher Eckenradius
+	Top Left:	Oben links:
+	Top Right:	Oben rechts:
+	Bottom Left:	Unten links:
+	Bottom Right:	Unten rechts:
+	Softness	Weichheit
+	Ambient Light	Umgebungslicht
+	Light behind the object	Licht hinter dem Objekt
+# Info panel: the selection's area.
+	Area	Fläche
+	Area: {area}	Fläche: {area}
+	Shape area: {area}	Formfläche: {area}
+	Width × height of the selection: the sheet it needs	Breite × Höhe der Auswahl: der benötigte Bogen
+	Area the closed shapes enclose: holes left out, overlaps counted once	Von den geschlossenen Formen umschlossene Fläche: ohne Löcher, Überlappungen einmal gezählt

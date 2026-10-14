@@ -4786,3 +4786,30 @@ mark-style	Japanese	Japonské
 @msg	Unknown dimension mode	Neznámý režim kóty
 @msg	Unknown dimension style	Neznámý styl kóty
 @msg	Unknown unit	Neznámá jednotka
+	Fill and Stroke Controls	Ovládací prvky výplně a tahu
+	Coloring Controls	Ovládací prvky barev
+	Draw Mode Controls	Ovládací prvky režimu kreslení
+	Screen Mode Controls	Ovládací prvky režimu zobrazení
+	Drawer menu	Nabídka zásuvky
+	Toolbar: Show Controls	Panel nástrojů: Zobrazit ovládací prvky
+@msg	control must be fillStroke, coloring, drawMode or screenMode	control musí být fillStroke, coloring, drawMode nebo screenMode
+@msg	unknown control `{name}`: fillStroke, coloring, drawMode or screenMode	neznámý ovládací prvek `{name}`: fillStroke, coloring, drawMode nebo screenMode
+@msg	give a fraction `t` from 0 to 1	zadejte hodnotu `t` od 0 do 1
+@msg	give the path `id`	zadejte `id` cesty
+@msg	invalid stroke widths	neplatné šířky tahu
+@msg	object has no weighted stroke	objekt nemá tah s platnou kladnou tloušťkou
+# Corner Radius: a field per corner of a live rectangle.
+	Single Corner Radius	Jeden poloměr rohů
+	Top Left:	Vlevo nahoře:
+	Top Right:	Vpravo nahoře:
+	Bottom Left:	Vlevo dole:
+	Bottom Right:	Vpravo dole:
+	Softness	Měkkost
+	Ambient Light	Okolní světlo
+	Light behind the object	Světlo za objektem
+# Info panel: the selection's area.
+	Area	Plocha
+	Area: {area}	Plocha: {area}
+	Shape area: {area}	Plocha tvaru: {area}
+	Width × height of the selection: the sheet it needs	Šířka × výška výběru: arch, který potřebuje
+	Area the closed shapes enclose: holes left out, overlaps counted once	Plocha uzavřená tvary: bez otvorů, překryvy počítány jednou

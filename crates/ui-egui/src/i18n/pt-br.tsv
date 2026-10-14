@@ -3755,3 +3755,10 @@ axis	Both	Ambos
 	Dimension Tool	Ferramenta Cota
 	Create Dimension	Criar Cota
 	Update Dimensions	Atualizar Cotas
+# Corner Radius: a field per corner of a live rectangle.
+# Info panel: the selection's area.
+	Area	Área
+	Area: {area}	Área: {area}
+	Shape area: {area}	Área da forma: {area}
+	Width × height of the selection: the sheet it needs	Largura × altura da seleção: a folha necessária
+	Area the closed shapes enclose: holes left out, overlaps counted once	Área delimitada pelas formas fechadas: sem furos, sobreposições contadas uma vez

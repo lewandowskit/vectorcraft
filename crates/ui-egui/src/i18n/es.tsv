@@ -4727,3 +4727,30 @@ mark-style	Japanese	Japonesas
 @msg	Unknown dimension mode	Modo de cota desconocido
 @msg	Unknown dimension style	Estilo de cota desconocido
 @msg	Unknown unit	Unidad desconocida
+	Fill and Stroke Controls	Controles de relleno y trazo
+	Coloring Controls	Controles de color
+	Draw Mode Controls	Controles de modo de dibujo
+	Screen Mode Controls	Controles de modo de pantalla
+	Drawer menu	Menú del cajón
+	Toolbar: Show Controls	Barra de herramientas: Mostrar controles
+@msg	control must be fillStroke, coloring, drawMode or screenMode	control debe ser fillStroke, coloring, drawMode o screenMode
+@msg	unknown control `{name}`: fillStroke, coloring, drawMode or screenMode	control desconocido `{name}`: fillStroke, coloring, drawMode o screenMode
+@msg	give a fraction `t` from 0 to 1	indica un valor `t` de 0 a 1
+@msg	give the path `id`	indica el `id` del trazado
+@msg	invalid stroke widths	anchuras de trazo no válidas
+@msg	object has no weighted stroke	el objeto no tiene un trazo con un grosor positivo válido
+# Corner Radius: a field per corner of a live rectangle.
+	Single Corner Radius	Radio de esquina único
+	Top Left:	Arriba a la izquierda:
+	Top Right:	Arriba a la derecha:
+	Bottom Left:	Abajo a la izquierda:
+	Bottom Right:	Abajo a la derecha:
+	Softness	Suavidad
+	Ambient Light	Luz ambiental
+	Light behind the object	Luz detrás del objeto
+# Info panel: the selection's area.
+	Area	Área
+	Area: {area}	Área: {area}
+	Shape area: {area}	Área de la forma: {area}
+	Width × height of the selection: the sheet it needs	Ancho × alto de la selección: la hoja que necesita
+	Area the closed shapes enclose: holes left out, overlaps counted once	Área que encierran las formas cerradas: sin agujeros, las superposiciones cuentan una vez

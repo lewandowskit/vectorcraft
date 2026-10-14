@@ -3920,3 +3920,26 @@ lighting	Light	光源
 	Display	显示
 
 # Dimension tool and Object › Dimensions (dimension groups, their dialog and messages).
+	Fill and Stroke Controls	填色和描边控件
+	Coloring Controls	颜色控件
+	Draw Mode Controls	绘图模式控件
+	Screen Mode Controls	屏幕模式控件
+	Drawer menu	抽屉菜单
+	Toolbar: Show Controls	工具栏：显示控件
+@msg	control must be fillStroke, coloring, drawMode or screenMode	control 必须是 fillStroke、coloring、drawMode 或 screenMode
+@msg	unknown control `{name}`: fillStroke, coloring, drawMode or screenMode	未知控件 `{name}`：fillStroke、coloring、drawMode 或 screenMode
+# Corner Radius: a field per corner of a live rectangle.
+	Single Corner Radius	统一圆角半径
+	Top Left:	左上：
+	Top Right:	右上：
+	Bottom Left:	左下：
+	Bottom Right:	右下：
+	Softness	柔和度
+	Ambient Light	环境光
+	Light behind the object	光源位于对象后方
+# Info panel: the selection's area.
+	Area	面积
+	Area: {area}	面积：{area}
+	Shape area: {area}	形状面积：{area}
+	Width × height of the selection: the sheet it needs	所选对象的宽 × 高：所需的纸张
+	Area the closed shapes enclose: holes left out, overlaps counted once	闭合形状围成的面积：不含孔洞，重叠部分只计一次

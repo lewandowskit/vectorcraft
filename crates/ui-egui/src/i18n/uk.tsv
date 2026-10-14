@@ -4336,3 +4336,31 @@ lighting	Light	Світло
 @msg	Unknown dimension mode	Невідомий режим розміру
 @msg	Unknown dimension style	Невідомий стиль розміру
 @msg	Unknown unit	Невідома одиниця
+	Basic	Базовий
+	Fill and Stroke Controls	Елементи керування заливкою та обведенням
+	Coloring Controls	Елементи керування кольором
+	Draw Mode Controls	Елементи керування режимом малювання
+	Screen Mode Controls	Елементи керування режимом екрана
+	Drawer menu	Меню шухляди
+	Toolbar: Show Controls	Панель інструментів: Показати елементи керування
+@msg	control must be fillStroke, coloring, drawMode or screenMode	control має бути fillStroke, coloring, drawMode або screenMode
+@msg	unknown control `{name}`: fillStroke, coloring, drawMode or screenMode	невідомий елемент керування `{name}`: fillStroke, coloring, drawMode або screenMode
+@msg	give a fraction `t` from 0 to 1	вкажіть значення `t` від 0 до 1
+@msg	give the path `id`	вкажіть `id` контуру
+@msg	invalid stroke widths	неприпустимі значення ширини обведення
+@msg	object has no weighted stroke	об’єкт не має обведення з допустимою додатною товщиною
+# Corner Radius: a field per corner of a live rectangle.
+	Single Corner Radius	Єдиний радіус кутів
+	Top Left:	Вгорі ліворуч:
+	Top Right:	Вгорі праворуч:
+	Bottom Left:	Внизу ліворуч:
+	Bottom Right:	Внизу праворуч:
+	Softness	М'якість
+	Ambient Light	Навколишнє світло
+	Light behind the object	Світло позаду об'єкта
+# Info panel: the selection's area.
+	Area	Площа
+	Area: {area}	Площа: {area}
+	Shape area: {area}	Площа фігури: {area}
+	Width × height of the selection: the sheet it needs	Ширина × висота виділення: потрібний аркуш
+	Area the closed shapes enclose: holes left out, overlaps counted once	Площа всередині замкнених фігур: без отворів, перекриття враховано один раз

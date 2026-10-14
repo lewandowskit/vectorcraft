@@ -4662,3 +4662,31 @@ mark-style	Japanese	Japońskie
 @msg	Select dimensions to update (at most 1000)	Zaznacz wymiary do aktualizacji (najwyżej 1000)
 @msg	Select one or more paths first	Najpierw zaznacz co najmniej jedną ścieżkę
 @msg	Select only dimension groups	Zaznacz tylko grupy wymiarów
+	Basic	Podstawowy
+	Fill and Stroke Controls	Elementy sterujące wypełnieniem i obrysem
+	Coloring Controls	Elementy sterujące kolorem
+	Draw Mode Controls	Elementy sterujące trybem rysowania
+	Screen Mode Controls	Elementy sterujące trybem ekranu
+	Drawer menu	Menu szuflady
+	Toolbar: Show Controls	Pasek narzędzi: Pokaż elementy sterujące
+@msg	control must be fillStroke, coloring, drawMode or screenMode	control musi mieć wartość fillStroke, coloring, drawMode lub screenMode
+@msg	unknown control `{name}`: fillStroke, coloring, drawMode or screenMode	nieznany element sterujący `{name}`: fillStroke, coloring, drawMode lub screenMode
+@msg	give a fraction `t` from 0 to 1	podaj wartość `t` od 0 do 1
+@msg	give the path `id`	podaj `id` ścieżki
+@msg	invalid stroke widths	nieprawidłowe szerokości obrysu
+@msg	object has no weighted stroke	obiekt nie ma obrysu o prawidłowej dodatniej grubości
+# Corner Radius: a field per corner of a live rectangle.
+	Single Corner Radius	Jeden promień narożników
+	Top Left:	Lewy górny:
+	Top Right:	Prawy górny:
+	Bottom Left:	Lewy dolny:
+	Bottom Right:	Prawy dolny:
+	Softness	Miękkość
+	Ambient Light	Światło otoczenia
+	Light behind the object	Światło za obiektem
+# Info panel: the selection's area.
+	Area	Pole
+	Area: {area}	Pole: {area}
+	Shape area: {area}	Pole kształtu: {area}
+	Width × height of the selection: the sheet it needs	Szerokość × wysokość zaznaczenia: arkusz, którego wymaga
+	Area the closed shapes enclose: holes left out, overlaps counted once	Pole wewnątrz zamkniętych kształtów: bez otworów, części nakładające się liczone raz

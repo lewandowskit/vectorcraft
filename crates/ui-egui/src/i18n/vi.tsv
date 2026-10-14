@@ -4335,3 +4335,31 @@ theme	Appearance	Giao diện
 @msg	Unknown dimension mode	Chế độ kích thước không xác định
 @msg	Unknown dimension style	Kiểu kích thước không xác định
 @msg	Unknown unit	Đơn vị không xác định
+	Basic	Cơ bản
+	Fill and Stroke Controls	Điều khiển tô và nét
+	Coloring Controls	Điều khiển màu
+	Draw Mode Controls	Điều khiển chế độ vẽ
+	Screen Mode Controls	Điều khiển chế độ màn hình
+	Drawer menu	Menu ngăn kéo
+	Toolbar: Show Controls	Thanh công cụ: Hiện điều khiển
+@msg	control must be fillStroke, coloring, drawMode or screenMode	control phải là fillStroke, coloring, drawMode hoặc screenMode
+@msg	unknown control `{name}`: fillStroke, coloring, drawMode or screenMode	điều khiển không xác định `{name}`: fillStroke, coloring, drawMode hoặc screenMode
+@msg	give a fraction `t` from 0 to 1	hãy cung cấp giá trị `t` từ 0 đến 1
+@msg	give the path `id`	hãy cung cấp `id` đường dẫn
+@msg	invalid stroke widths	chiều rộng nét không hợp lệ
+@msg	object has no weighted stroke	đối tượng không có nét với độ dày dương hợp lệ
+# Corner Radius: a field per corner of a live rectangle.
+	Single Corner Radius	Một bán kính góc
+	Top Left:	Trên cùng bên trái:
+	Top Right:	Trên cùng bên phải:
+	Bottom Left:	Dưới cùng bên trái:
+	Bottom Right:	Dưới cùng bên phải:
+	Softness	Độ mềm
+	Ambient Light	Ánh sáng môi trường
+	Light behind the object	Ánh sáng phía sau đối tượng
+# Info panel: the selection's area.
+	Area	Diện tích
+	Area: {area}	Diện tích: {area}
+	Shape area: {area}	Diện tích hình: {area}
+	Width × height of the selection: the sheet it needs	Rộng × cao của vùng chọn: tờ cần dùng
+	Area the closed shapes enclose: holes left out, overlaps counted once	Diện tích các hình khép kín bao quanh: bỏ lỗ thủng, phần chồng chỉ tính một lần
