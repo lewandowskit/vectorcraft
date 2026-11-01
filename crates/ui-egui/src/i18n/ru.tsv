@@ -6143,7 +6143,6 @@ breakText	Glyphs	Глифы
 	Large to Small	От большего к меньшему
 	Distribute Evenly	Распределить равномерно
 # Info panel: the selection's area.
-	Area	Площадь
 	Area: {area}	Площадь: {area}
 	Shape area: {area}	Площадь фигуры: {area}
 	Width × height of the selection: the sheet it needs	Ширина × высота выделения: нужный лист

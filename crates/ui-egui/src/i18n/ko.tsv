@@ -5749,7 +5749,6 @@ breakText	Glyphs	글리프
 	Large to Small	큰 것부터
 	Distribute Evenly	균등 분포
 # Info panel: the selection's area.
-	Area	면적
 	Area: {area}	면적: {area}
 	Shape area: {area}	도형 면적: {area}
 	Width × height of the selection: the sheet it needs	선택 영역의 폭 × 높이: 필요한 용지

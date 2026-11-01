@@ -5806,7 +5806,6 @@ breakText	Glyphs	字符
 	Large to Small	從大到小
 	Distribute Evenly	均勻分佈
 # Info panel: the selection's area.
-	Area	面積
 	Area: {area}	面積：{area}
 	Shape area: {area}	形狀面積：{area}
 	Width × height of the selection: the sheet it needs	所選物件的寬 × 高：所需的紙張

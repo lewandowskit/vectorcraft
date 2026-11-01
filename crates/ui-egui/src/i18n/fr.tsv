@@ -6163,7 +6163,6 @@ breakText	Glyphs	Glyphes
 	Large to Small	Du plus grand au plus petit
 	Distribute Evenly	Répartir uniformément
 # Info panel: the selection's area.
-	Area	Surface
 	Area: {area}	Surface : {area}
 	Shape area: {area}	Surface de la forme : {area}
 	Width × height of the selection: the sheet it needs	Largeur × hauteur de la sélection : la feuille nécessaire

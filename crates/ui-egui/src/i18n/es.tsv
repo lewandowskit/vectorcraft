@@ -6108,7 +6108,6 @@ breakText	Glyphs	Glifos
 	Large to Small	De mayor a menor
 	Distribute Evenly	Distribuir uniformemente
 # Info panel: the selection's area.
-	Area	Área
 	Area: {area}	Área: {area}
 	Shape area: {area}	Área de la forma: {area}
 	Width × height of the selection: the sheet it needs	Ancho × alto de la selección: la hoja que necesita

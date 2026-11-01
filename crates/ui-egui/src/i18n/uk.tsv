@@ -5766,7 +5766,6 @@ breakText	Glyphs	Гліфи
 	Large to Small	Від більшого до меншого
 	Distribute Evenly	Розподілити рівномірно
 # Info panel: the selection's area.
-	Area	Площа
 	Area: {area}	Площа: {area}
 	Shape area: {area}	Площа фігури: {area}
 	Width × height of the selection: the sheet it needs	Ширина × висота виділення: потрібний аркуш

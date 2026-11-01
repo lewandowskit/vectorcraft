@@ -5786,7 +5786,6 @@ breakText	Glyphs	Glifi
 	Large to Small	Dal più grande al più piccolo
 	Distribute Evenly	Distribuisci uniformemente
 # Info panel: the selection's area.
-	Area	Area
 	Area: {area}	Area: {area}
 	Shape area: {area}	Area della forma: {area}
 	Width × height of the selection: the sheet it needs	Larghezza × altezza della selezione: il foglio necessario

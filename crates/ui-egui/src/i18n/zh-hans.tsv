@@ -6009,7 +6009,6 @@ breakText	Glyphs	字形
 	Large to Small	从大到小
 	Distribute Evenly	均匀分布
 # Info panel: the selection's area.
-	Area	面积
 	Area: {area}	面积：{area}
 	Shape area: {area}	形状面积：{area}
 	Width × height of the selection: the sheet it needs	所选对象的宽 × 高：所需的纸张

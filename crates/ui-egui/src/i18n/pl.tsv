@@ -6021,7 +6021,6 @@ breakText	Glyphs	Glify
 	Large to Small	Od największego do najmniejszego
 	Distribute Evenly	Rozmieść równomiernie
 # Info panel: the selection's area.
-	Area	Pole
 	Area: {area}	Pole: {area}
 	Shape area: {area}	Pole kształtu: {area}
 	Width × height of the selection: the sheet it needs	Szerokość × wysokość zaznaczenia: arkusz, którego wymaga

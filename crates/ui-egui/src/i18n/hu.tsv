@@ -6152,7 +6152,6 @@ breakText	Glyphs	Glifák
 	Large to Small	Nagytól a kicsiig
 	Distribute Evenly	Egyenletes elosztás
 # Info panel: the selection's area.
-	Area	Terület
 	Area: {area}	Terület: {area}
 	Shape area: {area}	Alakzat területe: {area}
 	Width × height of the selection: the sheet it needs	A kijelölés szélessége × magassága: a szükséges ív
